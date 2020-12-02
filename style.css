@@ -1,0 +1,76 @@
+@import 'reset.css';
+
+@font-face {
+  font-family: 'Sansation';
+  src: url(font/Sansation_Light.ttf)
+}
+
+@font-face {
+  font-family: 'ReemKufi';
+  src: url(font/ReemKufi-Regular.ttf)
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  background-color: #BEC0CA;
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+}
+.hi {
+  font-family: 'Sansation';
+  font-size: 5vw;
+  color: #5C5C5C;
+  height: 30vh;
+  padding: 4vh;
+  line-height: 6vw;
+}
+.hi:focus {
+  outline: none;
+  caret-color: rgb(255, 80, 16);
+}
+.json-wrapper {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  background-color: #242329;
+}
+code {
+  font-family: 'ReemKufi';
+  line-height: 26px;
+  font-size: 14px;
+  color: #FAE4B9;
+  white-space: pre-wrap;
+}
+.circle-image {
+  width: 10vh;
+}
+footer {
+  height: 36vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.link-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+}
+.zenn-logo {
+  width: 20vh;
+}
+a:not(:first-child) {
+  margin-left: 2vh
+}
+small {
+  font-family: 'ReemKufi';
+  margin-top: 10vh;
+}
