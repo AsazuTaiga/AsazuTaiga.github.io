@@ -9,11 +9,8 @@
 </head>
 
 <body>
-  <script
-    src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
-  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
   <main>
-    <div class="hi" contenteditable>Hi👋 I'm Asazu Taiga. Please scroll down to enjoy my AR name card.</div>
+    <div class="hi" contenteditable>Hi👋 I'm Asazu Taiga.</div>
     <div class="json-wrapper">
       <code>
       {
@@ -25,35 +22,18 @@
       }
     </code>
     </div>
+    <div class="ar-link">
+      <a href="./ar.html">GO AR NAME CARD!</a>
+    </div>
   </main>
 
   <footer>
     <div class="link-wrap">
-      <a href="https://twitter.com/asazutaiga"><img class="circle-image" src="images/twitter.svg"
-          alt="Link to Taiga's Twitter account"></a>
-      <a href="https://zenn.dev/asazutaiga"><img class="zenn-logo" src="images/zenn.png"
+      <a href="https://linktree.com/asazutaiga"><img class="linktree" src="images/linktree.png"
           alt="Link to Taiga's Zenn account"></a>
-      <a href="https://github.com/AsazuTaiga"><img class="circle-image" src="images/github.svg"
-          alt="Link to Taiga's GitHub account"></a>
     </div>
     <small>©Asazu Taiga, 2020</small></small>
   </footer>
-
-  <div class="arjs">
-    <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;" embedded
-      arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
-
-      <a-nft type='nft' url='./nft/74b86e8ce57d7bbe67e126bbeee0751085c45ccf' smooth='true' smoothCount='10'
-        smoothTolerance='0.01' smoothThreshold='5'>
-        <a-entity text-geometry="value: Asazu Taiga; font: #exoFont;"
-          material="color: grey; src: #pixels; repeat: 0.5 0.5;" rotation="-90 0 0">
-        </a-entity>
-      </a-nft>
-
-      <a-entity camera></a-entity>
-    </a-scene>
-  </div>
-
 </body>
 
 </html>

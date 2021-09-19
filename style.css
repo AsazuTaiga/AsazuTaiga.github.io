@@ -16,29 +16,27 @@
 
 main {
   background-color: #bec0ca;
-  position: relative;
-  height: 60vh;
-  width: 100vw;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .hi {
   font-family: "Sansation";
-  font-size: 5vw;
+  font-size: 40px;
   color: #5c5c5c;
-  height: 30vh;
-  padding: 4vh;
-  line-height: 6vw;
+  height: 100px;
+  word-break: break-all;
+  margin-top: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .hi:focus {
   outline: none;
   caret-color: rgb(255, 80, 16);
 }
 .json-wrapper {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
+  width: 90%;
   max-width: 500px;
   padding: 10px;
   background-color: #242329;
@@ -50,41 +48,35 @@ code {
   color: #fae4b9;
   white-space: pre-wrap;
 }
-.circle-image {
-  width: 10vh;
+.ar-link {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 footer {
-  height: 36vh;
+  height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .link-wrap {
   display: flex;
+  width: 100%;
+  max-width: 500px;
   justify-content: center;
   align-items: center;
   margin-top: 10vh;
   margin-bottom: 10vh;
 }
-.zenn-logo {
-  width: 20vh;
+.linktree {
+  width: 200px;
 }
 a:not(:first-child) {
-  margin-left: 2vh;
+  margin-left: 30px;
 }
+
 small {
   font-family: "ReemKufi";
-  margin-top: 10vh;
-}
-
-.arjs {
-  height: 500px;
-  width: 500px;
-  position: relative;
-}
-
-.arjs-loader div {
-  text-align: center;
-  font-size: 1.25em;
-  color: white;
 }
