@@ -9,26 +9,51 @@
 </head>
 
 <body>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+
   <main>
-    <div class="hi" contenteditable>Hi there. I'm Asazu Taiga.</div>
+    <div class="hi" contenteditable>Hi👋 I'm Asazu Taiga. Please scroll down to enjoy my AR name card.</div>
     <div class="json-wrapper">
       <code>
       {
-        “name”: “Asazu Taiga”,
-        “twitter”: “@asazutaiga”,
-        “job”: “Developer”,
-        “interest”: [“Next.js”, “TypeScript”, “Firebase”],
-        “hobby”: “haiku”
+        "name": "Asazu Taiga",
+        "twitter": "@asazutaiga",
+        "job": "Developer",
+        "interest": ["React", "Next.js", "TypeScript"],
+        "hobby": "haiku"
       }
     </code>
     </div>
   </main>
-  <footer>
-    <div class="link-wrap">
-      <a href="https://twitter.com/asazutaiga"><img class="circle-image" src="images/twitter.svg" alt="Link to Taiga's Twitter account"></a>
-      <a href="https://zenn.dev/asazutaiga"><img class="zenn-logo" src="images/zenn.png" alt="Link to Taiga's Zenn account"></a>
-      <a href="https://github.com/AsazuTaiga"><img class="circle-image" src="images/github.svg" alt="Link to Taiga's GitHub account"></a>
+
+  <div class="link-wrap">
+    <a href="https://twitter.com/asazutaiga"><img class="circle-image" src="images/twitter.svg"
+        alt="Link to Taiga's Twitter account"></a>
+    <a href="https://zenn.dev/asazutaiga"><img class="zenn-logo" src="images/zenn.png"
+        alt="Link to Taiga's Zenn account"></a>
+    <a href="https://github.com/AsazuTaiga"><img class="circle-image" src="images/github.svg"
+        alt="Link to Taiga's GitHub account"></a>
+  </div>
+
+  <div class="arjs">
+    <div class="arjs-loader">
+      <div>Loading AR Reader...</div>
     </div>
+    <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;" embedded
+      arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
+
+      <a-nft type='nft' url='./nft/74b86e8ce57d7bbe67e126bbeee0751085c45ccf' smooth='true' smoothCount='10'
+        smoothTolerance='0.01' smoothThreshold='5'>
+        <a-entity text-geometry="value: Asazu Taiga; font: #exoFont;"
+          material="color: grey; src: #pixels; repeat: 0.5 0.5;" rotation="-90 0 0">
+        </a-entity>
+      </a-nft>
+
+      <a-entity camera></a-entity>
+    </a-scene>
+  </div>
+
+  <footer>
     <small>©Asazu Taiga, 2020</small></small>
   </footer>
 </body>
